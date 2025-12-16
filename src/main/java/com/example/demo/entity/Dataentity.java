@@ -1,5 +1,8 @@
 package com.exmple.demo.entity;
 
-public Dataentity(){
-    
+public class Dataentity{
+     private int id;
+     private String name;
+     private String email;
+
 }
