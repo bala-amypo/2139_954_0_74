@@ -12,7 +12,7 @@ public class Studentserivce{
 
     public Studententity saveData(Studententity st){
         details.put(st.getId(),st);
-        return st;
+        return details.get(st.getId());
     }
 
     public Studententity getStudents(int id){
