@@ -8,7 +8,7 @@ import com.example.demo.service.Studentservice;
 
 @Service
 public class Studentserviceimpl implements Studentservice{
-    private final Map<Integer, Studententity>stor e=new HashMap<>();
+    private final Map<Integer, Studententity>store=new HashMap<>();
     private int counter =1;
 
     @Override
@@ -24,7 +24,7 @@ public class Studentserviceimpl implements Studentservice{
     }
 
     @Override
-    public getStudent(int id){
+    public Studententity getStudent(int id){
         return store.get(id);
     }
 
