@@ -7,9 +7,30 @@ public class Studententity{
 
      public Studententity() {}
      
-     public Studententity(int id,String name)
-      public int grtId(){
-          
+     public Studententity(int id,String name,String email){
+      this.id=id;
+      this.name=name;
+      this.email=email;
+     }
+
+      public int getId(){
+          return id;
+      }
+      public String getName(){
+            return name;
+      }
+      public String getEmail(){
+            return email;
+      }
+
+      public void setId(int id){
+            return this.id=id;
+      }
+      public void setName(String name){
+            return this.name=name;
+      }
+      public void setEmail(String email){
+           return this.email-
       }
      
 }
