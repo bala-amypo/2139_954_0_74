@@ -17,19 +17,19 @@ public class Studententity{
           return id;
       }
       public void setId(int id){
-            return this.id=id;
+          this.id=id;
       }
       public String getName(){
             return name;
       }
       public void setName(String name){
-            return this.name=name;
+          this.name=name;
       }
        public String getEmail(){
             return email;
       }
       public void setEmail(String email){
-           return this.email=email;
+           this.email=email;
       }
      
 }
