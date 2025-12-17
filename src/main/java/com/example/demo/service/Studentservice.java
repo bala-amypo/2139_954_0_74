@@ -2,11 +2,11 @@ package com.example.demo.service;
 
 import java.util.*;
 import java.util.stream.Collectors;
-import org.springframework.stereotype.Serivce;
+import org.springframework.stereotype.Service;
 import com.example.demo.entity.Studententity;
 
-@Serivce
-public class Studentserivce{
+@Service
+public class Studentservice{
 
     private Map<Integer, Studententity>details=new HashMap<>();
 

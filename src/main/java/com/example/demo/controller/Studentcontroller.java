@@ -6,21 +6,21 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import com.example.demo.entity.Studententity;
-import com.example.demo.service.Studentserivce;
+import com.example.demo.service.Studentservice;
 
 
 @RestController
 public class Studentcontroller{
 
     @Autowired
-    Studentserivce ser;
+    Studentservice ser;
 
     @PostMapping("/Postadd")
     public Studententity save(@RequestBody Studententity st){
         return ser.saveData(st);
     }
 
-    @GetMapping("Getadd/{id}")
+    @GetMapping("/Getadd/{id}")
     public Studententity getStudent(@PathVariable int id){
         return ser.getStudents(id);
     }

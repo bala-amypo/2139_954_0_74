@@ -4,8 +4,8 @@ import java.util.*;
 import org.springframework.stereotype.Service;
 import com.example.demo.entity.Studententity;
 
-@Serivce
-public class Studentserivceimpl implements Studentserivce{
+@Service
+public class Studentserviceimpl implements Studentservice{
     private final Map<Long, Studententity>store=new HashMap<>();
     private long counter =1;
 
