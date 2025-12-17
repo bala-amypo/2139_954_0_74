@@ -1,4 +1,4 @@
-package com.example.demo.service.impl;
+package com.example.demo.service;
 
 import java.util.*;
 import org.springframework.stereotype.Service;
@@ -27,8 +27,5 @@ public class Studentserviceimpl implements Studentservice{
     public getStudent(int id){
         return store.get(id);
     }
-
-    @Override
-    public Stu
 
 }

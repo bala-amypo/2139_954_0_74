@@ -25,12 +25,12 @@ public class Studentservice{
         return details.values().stream().collect(Collectors.toList());
     }
 
-    public Studententity updateStudent(int id, Studententity st){
-        Studententity existing=details.get(id);
-        if( existing !=null){
-            existing.setName(st.getName());
-            existing.setEmail(st.getEmail());
-        }
-        return existing;
-    }
+    // public Studententity updateStudent(int id, Studententity st){
+    //     Studententity existing=details.get(id);
+    //     if( existing !=null){
+    //         existing.setName(st.getName());
+    //         existing.setEmail(st.getEmail());
+    //     }
+    //     return existing;
+    //}
 }
