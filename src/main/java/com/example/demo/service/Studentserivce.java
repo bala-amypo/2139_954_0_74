@@ -6,7 +6,7 @@ import org.springframework.stereotype.serivce;
 import com.example.demo.entity.Studententity;
 
 @Serivce
-public class Studentserivces{
+public class Studentserivce{
 
     private Map<Integer, Studententity>details=new HashMap<>();
 

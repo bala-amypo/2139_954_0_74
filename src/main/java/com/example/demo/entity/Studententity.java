@@ -30,7 +30,7 @@ public class Studententity{
             return this.name=name;
       }
       public void setEmail(String email){
-           return this.email-
+           return this.email=email;
       }
      
 }
