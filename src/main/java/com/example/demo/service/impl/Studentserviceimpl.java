@@ -2,12 +2,14 @@ package com.example.demo.service.impl;
 
 import java.util.*;
 import org.springframework.stereotype.Service;
+
 import com.example.demo.entity.Studententity;
+import com.example.demo.service.Studentservice;
 
 @Service
 public class Studentserviceimpl implements Studentservice{
-    private final Map<Long, Studententity>store=new HashMap<>();
-    private long counter =1;
+    private final Map<Integer, Studententity>store=new HashMap<>();
+    private int counter =1;
 
     @Override
     public Studententity saveData(Studententity st){

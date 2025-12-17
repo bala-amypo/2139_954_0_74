@@ -9,8 +9,10 @@ import com.example.demo.entity.Studententity;
 public class Studentservice{
 
     private Map<Integer, Studententity>details=new HashMap<>();
+    private int counter=1; 
 
     public Studententity saveData(Studententity st){
+        st.setId(counter++);
         details.put(st.getId(),st);
         return st;
     }
@@ -20,7 +22,7 @@ public class Studentservice{
     }
 
     public List<Studententity> getAllStudents(){
-        return details.values().stream().Collect(Collectors.toList());
+        return details.values().stream().collect(Collectors.toList());
     }
 
     public Studententity updateStudent(int id, Studententity st){
