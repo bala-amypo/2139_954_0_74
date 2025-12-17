@@ -16,18 +16,17 @@ public class Studententity{
       public int getId(){
           return id;
       }
-      public String getName(){
-            return name;
-      }
-      public String getEmail(){
-            return email;
-      }
-
       public void setId(int id){
             return this.id=id;
       }
+      public String getName(){
+            return name;
+      }
       public void setName(String name){
             return this.name=name;
+      }
+       public String getEmail(){
+            return email;
       }
       public void setEmail(String email){
            return this.email=email;

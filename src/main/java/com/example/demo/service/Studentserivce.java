@@ -2,7 +2,7 @@ package com.example.demo.service;
 
 import java.util.*;
 import java.util.stream.Collectors;
-import org.springframework.stereotype.serivce;
+import org.springframework.stereotype.Serivce;
 import com.example.demo.entity.Studententity;
 
 @Serivce
