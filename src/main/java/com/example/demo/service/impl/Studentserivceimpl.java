@@ -6,10 +6,24 @@ import com.example.demo.entity.Studententity;
 
 @Serivce
 public class Studentserivceimpl implements Studentserivce{
-    private final Map<Long, Student>store=new HashMap<>();
+    private final Map<Long, Studententity>store=new HashMap<>();
     private long counter =1;
 
     @Override
-    public 
+    public Studententity insertStudent(Studententity st){
+        st.setId(counter++);
+        store.put(st.getId(),st);
+        return st;
+    }
+
+    @Override
+    public List<Studententity>getAllStudent(){
+        return new ArrayList<>(store.values());
+    }
+
+    @Override
+    public Optional<Studententity>getOneStudent(Long id){
+        return Optional.ofNullable(store.get(id));
+    }
 
 }
