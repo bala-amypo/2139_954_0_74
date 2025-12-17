@@ -11,7 +11,16 @@ public class Studentcontroller{
 
     @Autowired
     Studentserivces ser;
-    @PostMapping("/Postadd")
 
-    public Studententity save(@Req)
+    @PostMapping("/Postadd")
+    public Studententity save(@RequestBody Studententity st){
+        return ser.saveData(st);
+    }
+
+    @GetMapping("Getadd/{id}")
+    public Studententity getStudents(@PathVariable int id){
+        return ser.getStudents(id);
+    }
+
+    @GetMapping("/GetAll")
 }
