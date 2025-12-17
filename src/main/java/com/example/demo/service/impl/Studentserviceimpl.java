@@ -27,8 +27,6 @@ public class Studentserviceimpl implements Studentservice{
     }
 
     @Override
-    public void deleteStudent(Long id){
-        store.remove(id);
-    }
+    public Stu
 
 }

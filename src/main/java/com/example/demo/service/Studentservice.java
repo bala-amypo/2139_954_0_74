@@ -12,7 +12,7 @@ public class Studentservice{
 
     public Studententity saveData(Studententity st){
         details.put(st.getId(),st);
-        return details.get(st.getId());
+        return st;
     }
 
     public Studententity getStudents(int id){
@@ -24,12 +24,11 @@ public class Studentservice{
     }
 
     public Studententity updateStudent(int id, Studententity st){
-        if(details.containsKey(id)){
-            Studententity existing=details.get(id);
+        Studententity existing=details.get(id);
+        if( existing !=null){
             existing.setName(st.getName());
             existing.setEmail(st.getEmail());
-            return existing;
         }
-        return null;
+        return existing;
     }
 }
