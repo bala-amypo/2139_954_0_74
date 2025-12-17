@@ -19,7 +19,7 @@ public class Studentservice{
         return details.get(id);
     }
 
-    public List<Studententity> getStudents(){
+    public List<Studententity> getAllStudents(){
         return details.values().stream().Collect(Collectors.toList());
     }
 

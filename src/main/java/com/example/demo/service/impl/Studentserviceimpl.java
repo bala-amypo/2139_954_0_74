@@ -10,7 +10,7 @@ public class Studentserviceimpl implements Studentservice{
     private long counter =1;
 
     @Override
-    public Studententity insertStudent(Studententity st){
+    public Studententity saveData(Studententity st){
         st.setId(counter++);
         store.put(st.getId(),st);
         return st;
@@ -22,7 +22,7 @@ public class Studentserviceimpl implements Studentservice{
     }
 
     @Override
-    public Optional<Studententity>getOneStudent(Long id){
+    public Optional<Studententity>getStudent(Long id){
         return Optional.ofNullable(store.get(id));
     }
 
