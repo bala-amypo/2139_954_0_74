@@ -20,6 +20,16 @@ public class Studentserivces{
     }
 
     public List<Studententity> getStudents(){
-        return details.values().stream().coll
+        return details.values().stream().Collect(Collectors.toList());
+    }
+
+    public Studententity updateStudent(int id, Studententity st){
+        if(details.containsKey(id)){
+            Studententity existing=details.get(id);
+            existing.setName(st.getName());
+            existing.setEmail(st.getEmail());
+            return existing;
+        }
+        return null;
     }
 }
