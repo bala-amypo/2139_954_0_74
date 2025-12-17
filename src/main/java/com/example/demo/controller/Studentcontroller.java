@@ -3,7 +3,7 @@ package com.example.demo.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-
+import org.springframework
 
 
 @RestController
@@ -23,4 +23,12 @@ public class Studentcontroller{
     }
 
     @GetMapping("/GetAll")
+    public List<Studententity> getAllStudent(){
+        return ser.getStudents();
+    }
+
+    @PutMapping("/Update/{id}")
+    public Studententity updateStudent(@PathVariable int id,@RequestBody Studententity st){
+        return ser.updateStudent(id, st);
+    }
 }
