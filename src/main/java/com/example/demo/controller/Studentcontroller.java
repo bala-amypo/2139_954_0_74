@@ -21,7 +21,7 @@ public class Studentcontroller{
     }
 
     @GetMapping("/Getadd/{id}")
-    public Studententity getStudent(@PathVariable int id){
+    public Studententity getStudents(@PathVariable int id){
         return ser.getStudents(id);
     }
 
