@@ -27,7 +27,7 @@ public class Studentcontroller{
 
     @GetMapping("/GetAll")
     public List<Studententity> getAllStudent(){
-        return ser.getStudents();
+        return ser.getAllStudents();
     }
 
     @PutMapping("/Update/{id}")
