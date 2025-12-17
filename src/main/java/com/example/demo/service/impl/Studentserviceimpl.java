@@ -24,8 +24,8 @@ public class Studentserviceimpl implements Studentservice{
     }
 
     @Override
-    public Optional<Studententity>getStudent(Long id){
-        return Optional.ofNullable(store.get(id));
+    public getStudent(int id){
+        return store.get(id);
     }
 
     @Override
