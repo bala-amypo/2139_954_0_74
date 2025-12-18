@@ -10,28 +10,29 @@ import com.example.demo.service.Studentservice;
 
 
 @RestController
-public class Studentcontroller{
+public class Studentcontroller {
 
     @Autowired
     Studentservice ser;
 
     @PostMapping("/Postadd")
-    public Studententity save(@RequestBody Studententity st){
+    public Studententity save(@RequestBody Studententity st) {
         return ser.saveData(st);
     }
 
     @GetMapping("/Getadd/{id}")
-    public Studententity getStudents(@PathVariable int id){
+    public Studententity getStudents(@PathVariable int id) {
         return ser.getStudents(id);
     }
 
     @GetMapping("/GetAll")
-    public List<Studententity> getAllStudent(){
+    public List<Studententity> getAllStudent() {
         return ser.getAllStudents();
     }
 
     @PutMapping("/Update/{id}")
-    public Studententity updateStudent(@PathVariable int id,@RequestBody Studententity st){
+    public Studententity updateStudent(@PathVariable int id,
+                                       @RequestBody Studententity st) {
         return ser.updateStudent(id, st);
     }
 }
